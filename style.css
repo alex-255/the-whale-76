@@ -1,0 +1,387 @@
+/*!
+Theme Name: The Whale 76
+Theme URI: http://underscores.me/
+Author: Alexander Curiosotti
+Author URI: http://underscores.me/
+Description: Description 5
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: the-whale-76
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+The Whale 76 is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+
+
+/*--------------------------------------------------------------
+# Custom CSS
+--------------------------------------------------------------*/
+/* Normalize */
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*
+Header
+*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page .site-header-wrapper {
+  background-color: rgba(107, 107, 107, 0.2);
+}
+
+.custom-logo {
+  max-width: 50px;
+  height: auto;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+}
+
+.site-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.site-title a {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  font-size: large;
+}
+
+/* Menu */
+#main-navigation.toggled {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(40, 40, 40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-bar #main-navigation.toggled {
+  padding-top: 50px;
+}
+
+#button-toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(77, 77, 77);
+}
+
+#main-menu {
+  display: none;
+}
+#main-menu ul {
+  list-style-type: none;
+}
+
+.toggled #main-menu {
+  display: flex;
+  align-items: center;
+}
+.toggled #main-menu ul {
+  padding: 0;
+}
+.toggled #main-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toggled #main-menu a {
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+
+.toggled #button-toggle {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 1000px) {
+  #main-navigation {
+    display: flex;
+    align-items: center;
+  }
+  #main-menu {
+    display: flex;
+    align-items: center;
+  }
+  #main-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  #main-menu ul li {
+    margin-right: 15px;
+  }
+  #main-menu ul li a {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background: linear-gradient(45deg, rgb(77, 77, 77) 0%, rgb(77, 77, 77) 50%, transparent 50%, transparent 100%);
+    background-size: 200% 200%;
+    background-position: top right;
+    transition: all 0.3s;
+  }
+  #main-menu ul li a:hover, #main-menu ul li a:focus {
+    background-position: bottom left;
+    color: rgb(255, 255, 255);
+  }
+  #main-menu ul li:last-of-type {
+    margin-right: 0;
+  }
+  #button-toggle {
+    display: none;
+  }
+}
+/* Slider */
+.carousel-item img {
+  aspect-ratio: none;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption--title {
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+}
+.carousel-caption--content {
+  text-shadow: 0px 0px 10px black, 0px 0px 10px black, 0px 0px 10px black;
+}
+
+@media (min-width: 600px) {
+  .carousel-item img {
+    aspect-ratio: 16/6;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1250px) {
+  .carousel-item img {
+    aspect-ratio: 16/4;
+    object-fit: cover;
+  }
+}
+/* Main section */
+.site-main {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.site-main article {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.single-post .site-main {
+  padding-top: 0;
+}
+
+.thumbnail-image {
+  margin-bottom: 50px;
+}
+
+.trimmed-text {
+  text-align: justify;
+}
+
+.read-more-link {
+  text-decoration: none;
+  color: rgb(77, 77, 77);
+  padding: 4px 8px;
+  background: linear-gradient(180deg, transparent 0%, transparent 46%, rgb(77, 77, 77) 46%, rgb(77, 77, 77) 100%);
+  background-size: 200% 200%;
+  background-position: top;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+.read-more-link:hover, .read-more-link:focus {
+  color: rgb(255, 255, 255);
+  background-position: bottom;
+  border-radius: 3px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.nav-links > div a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+}
+.nav-links > div a:hover, .nav-links > div a:focus {
+  background-color: rgb(107, 107, 107);
+}
+
+@media (min-width: 1200px) {
+  .thumbnail-image {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1400px) {
+  .thumbnail-image {
+    aspect-ratio: 16/5;
+    object-fit: cover;
+  }
+}
+/* Footer */
+.site-footer {
+  background-color: rgb(59, 59, 59);
+  color: rgb(255, 255, 255);
+}
+.site-footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.site-footer a:hover, .site-footer a:focus {
+  text-decoration: underline;
+}
+
+.site-info {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Miscelanious */
+.entry-title a {
+  color: rgb(77, 77, 77);
+  text-decoration: none;
+}
+.entry-title a:hover, .entry-title a:focus {
+  text-decoration: underline;
+}
+
+.wp-block-latest-posts,
+.wp-block-archives,
+.wp-block-categories,
+.wp-block-latest-comments {
+  padding-left: 0;
+}
+.wp-block-latest-posts li,
+.wp-block-archives li,
+.wp-block-categories li,
+.wp-block-latest-comments li {
+  display: inline-block;
+}
+.wp-block-latest-posts li a,
+.wp-block-archives li a,
+.wp-block-categories li a,
+.wp-block-latest-comments li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+.wp-block-latest-posts li a:hover, .wp-block-latest-posts li a:focus,
+.wp-block-archives li a:hover,
+.wp-block-archives li a:focus,
+.wp-block-categories li a:hover,
+.wp-block-categories li a:focus,
+.wp-block-latest-comments li a:hover,
+.wp-block-latest-comments li a:focus {
+  background-color: rgb(107, 107, 107);
+}
+
+.wp-block-calendar td:has(a) {
+  background-color: rgb(77, 77, 77);
+}
+.wp-block-calendar td:has(a):hover, .wp-block-calendar td:has(a):focus {
+  background-color: rgb(107, 107, 107);
+}
+.wp-block-calendar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.widget_search {
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid rgb(77, 77, 77);
+}
+
+input[type=submit],
+button {
+  border-radius: 3px;
+  padding: 4px 8px;
+  background-color: rgb(77, 77, 77);
+  color: rgb(255, 255, 255);
+}
+input[type=submit]:hover, input[type=submit]:focus,
+button:hover,
+button:focus {
+  background-color: rgb(107, 107, 107);
+}
+
+input[type=submit] {
+  width: 100%;
+}
+
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+.comment-form-comment textarea {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  input[type=submit] {
+    width: unset;
+  }
+  .comment-form-comment textarea {
+    width: fit-content;
+  }
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=style.css.map */
