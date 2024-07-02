@@ -58,7 +58,7 @@ get_header();
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post(); ?>
             <div class="carousel-item <?php echo ($the_query->current_post === 0) ? "active" : "" ; ?>">
-                <img src="<?php esc_attr_e( get_the_post_thumbnail_url(get_the_ID(),'large') ); ?>"
+                <img src="<?php esc_attr_e( get_the_post_thumbnail_url(get_the_ID(),'1536x1536') ); ?>"
                     class="d-block w-100" alt="<?php the_title(); ?>">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="carousel-caption--title"><?php the_title(); ?></h5>
@@ -110,7 +110,7 @@ get_header();
 
                     <div class="entry-content">
                         <div class="row">
-                            <?php $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(),'small'); ?>
+                            <?php $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(),'blog_image'); ?>
                             <div class="col-12 <?php echo ($thumbnail_url) ? "col-lg-8" : "" ; ?> order-2 order-lg-1">
                                 <?php
 							if ( is_singular() ) :

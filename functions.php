@@ -99,6 +99,8 @@ function the_whale_76_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	add_image_size( 'blog_image', 696, 465, true );
 }
 add_action( 'after_setup_theme', 'the_whale_76_setup' );
 
