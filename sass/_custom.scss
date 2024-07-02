@@ -415,3 +415,18 @@ input[type=submit] {
   background-color: transparent;
 }
 
+.wp-block-calendar {
+    table {
+        caption-side: top;
+    }
+
+    caption {
+        text-align: center;
+    }
+}
+
+.wp-calendar-nav {
+    a {
+        color: $color_grey_text;
+    }
+}
