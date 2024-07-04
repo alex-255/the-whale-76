@@ -16,6 +16,8 @@
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="<?php echo (get_bloginfo( "description" )) ? esc_html(get_bloginfo( "description" )) : "One more website on WordPress."; ?>">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
     <?php wp_head(); ?>

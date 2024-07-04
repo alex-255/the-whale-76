@@ -140,7 +140,7 @@ add_action( 'widgets_init', 'the_whale_76_widgets_init' );
  * Enqueue scripts and styles.
  */
 function the_whale_76_scripts() {
-	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/inc/bootstrap-5.3.3-dist/css/bootstrap.css' ), array(), '5.3.3' );
+	wp_enqueue_style( 'bootstrap', get_theme_file_uri( '/inc/bootstrap-5.3.3-dist/css/bootstrap.min.css' ), array(), '5.3.3' );
 	wp_enqueue_style( 'bootstrap-icons', get_theme_file_uri( '/inc/icons/bootstrap-icons.css' ), array(), _S_VERSION );
 	wp_enqueue_style( 'font-open-sans', get_theme_file_uri( '/inc/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf' ), array(), _S_VERSION );
 
@@ -149,7 +149,7 @@ function the_whale_76_scripts() {
 
 	
 
-	wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/inc/bootstrap-5.3.3-dist/js/bootstrap.bundle.js', array(), '5.3.3', true );
+	wp_enqueue_script( 'bootstrap-bundle', get_template_directory_uri() . '/inc/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true );
 
 	wp_enqueue_script( 'the-whale-76-custom', get_template_directory_uri() . '/js/custom.js', array( 'bootstrap-bundle' ), _S_VERSION, true );
 
