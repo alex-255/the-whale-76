@@ -19,11 +19,11 @@ msgid "_s"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "https://underscores.me/"
+msgid "#"
 msgstr ""
 
 #. Description of the theme
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
+msgid "Hi. This is a minimalistic WordPress theme. I used Bootstrap (grid, slider) to create this simple blog. (Alexander Curiousotti)."
 msgstr ""
 
 #. Author of the theme

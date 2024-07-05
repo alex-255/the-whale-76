@@ -17,7 +17,7 @@ get_header();
         <div class="col-12 col-lg-9">
             <?php if ( have_posts() ) : ?>
             <header class="page-header">
-                
+
                 <h1 class="page-title">
                     <?php
 					
@@ -25,7 +25,7 @@ get_header();
 					printf( esc_html__( 'Search Results for: %s', 'the-whale-76' ), '<span>' . get_search_query() . '</span>' );
 					?>
                 </h1>
-				<div><?php get_search_form(); ?></div>
+                <div><?php get_search_form(); ?></div>
             </header><!-- .page-header -->
 
             <?php
@@ -61,7 +61,7 @@ get_header();
 								if ($thumbnail_url) {
 									?>
                         <a href="<?php echo esc_url( get_permalink() ); ?>"><img
-                                src="<?php esc_attr_e( $thumbnail_url ); ?>" class="d-block w-100"
+                                src="<?php echo esc_url($thumbnail_url); ?>" class="d-block w-100"
                                 alt="<?php the_title(); ?>"></a>
                         <?php
 								}

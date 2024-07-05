@@ -33,7 +33,7 @@ get_header();
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post(); ?>
             <button type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="<?php esc_html_e($the_query->current_post); ?>"
+                data-bs-slide-to="<?php echo esc_attr($the_query->current_post); ?>"
                 class="<?php echo ($the_query->current_post === 0) ? "active" : "" ; ?>"
                 aria-current="<?php echo ($the_query->current_post === 0) ? "true" : "" ; ?>"
                 aria-label="<?php the_title(); ?>"></button>
@@ -58,7 +58,7 @@ get_header();
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post(); ?>
             <div class="carousel-item <?php echo ($the_query->current_post === 0) ? "active" : "" ; ?>">
-                <img src="<?php esc_attr_e( get_the_post_thumbnail_url(get_the_ID(),'1536x1536') ); ?>"
+                <img src="<?php echo esc_url( get_the_post_thumbnail_url(get_the_ID(),'1536x1536') ); ?>"
                     class="d-block w-100" alt="<?php the_title(); ?>">
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="carousel-caption--title"><?php the_title(); ?></h5>
@@ -128,7 +128,7 @@ get_header();
 								if ($thumbnail_url) {
 									?>
                                 <a href="<?php echo esc_url( get_permalink() ); ?>"><img
-                                        src="<?php esc_attr_e( $thumbnail_url ); ?>" class="d-block w-100"
+                                        src="<?php echo esc_url( $thumbnail_url ); ?>" class="d-block w-100"
                                         alt="<?php the_title(); ?>"></a>
                             </div>
                             <?php

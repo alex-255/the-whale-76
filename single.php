@@ -18,7 +18,7 @@ get_header();
     <?php 
 					if ($thumbnail_url) {
 						?>
-    <img src="<?php esc_attr_e( $thumbnail_url ); ?>" class="thumbnail-image d-block w-100" alt="<?php the_title(); ?>">
+    <img src="<?php echo esc_url($thumbnail_url); ?>" class="thumbnail-image d-block w-100" alt="<?php the_title(); ?>">
 
     <?php
 					}
