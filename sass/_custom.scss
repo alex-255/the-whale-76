@@ -376,8 +376,13 @@ input {
 }
 
 input[type=search] {
-    outline: 2px solid rgb(78, 161, 255);
-    outline-offset: -4px;
+    outline: none;
+
+    &:focus {
+        outline: 2px solid rgb(78, 161, 255);
+        outline-offset: -4px;
+    }
+    
 }
 
 input[type=submit],
@@ -464,9 +469,13 @@ a {
     input[type=search] {
         min-width: 3rem;
         padding: 8px;
-        outline: 2px solid rgb(78, 161, 255);
-        outline-offset: -4px;
+        outline: none;
         width: 100%;
+
+        &:focus {
+            outline: 2px solid rgb(78, 161, 255);
+            outline-offset: -4px;
+        }
     }
 }
 

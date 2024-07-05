@@ -346,6 +346,9 @@ input {
 }
 
 input[type=search] {
+  outline: none;
+}
+input[type=search]:focus {
   outline: 2px solid rgb(78, 161, 255);
   outline-offset: -4px;
 }
@@ -422,9 +425,12 @@ a:hover, a:focus {
 .search-form input[type=search] {
   min-width: 3rem;
   padding: 8px;
+  outline: none;
+  width: 100%;
+}
+.search-form input[type=search]:focus {
   outline: 2px solid rgb(78, 161, 255);
   outline-offset: -4px;
-  width: 100%;
 }
 
 @media (min-width: 992px) {
