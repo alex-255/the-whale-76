@@ -128,7 +128,7 @@ get_header();
 								if ($thumbnail_url) {
 									?>
                                 <a href="<?php echo esc_url( get_permalink() ); ?>"><img
-                                        src="<?php echo esc_url( $thumbnail_url ); ?>" class="d-block w-100"
+                                        src="<?php echo esc_url( $thumbnail_url ); ?>" class="thumbnail-image d-block w-100"
                                         alt="<?php the_title(); ?>"></a>
                             </div>
                             <?php

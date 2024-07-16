@@ -230,8 +230,28 @@ Header
     padding-top: 0;
 }
 
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(5deg);
+    }
+    40% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .thumbnail-image {
     margin-bottom: 50px;
+
+    &:hover {
+        animation-name: shake;
+        animation-duration: 1s;
+    }
 }
 
 .trimmed-text {
@@ -284,12 +304,12 @@ Header
     }
 }
 
-@media (min-width: 1400px) {
-    .thumbnail-image {
-        aspect-ratio: 16/5;
-        object-fit: cover;
-    }
-}
+// @media (min-width: 1400px) {
+//     .thumbnail-image {
+//         aspect-ratio: 16/5;
+//         object-fit: cover;
+//     }
+// }
 
 /* Footer */
 
